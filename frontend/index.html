@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Open-LLM-Vtuber</title>
+  <script type="module" crossorigin src="./assets/main-nu7uwxNJ.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main-QEkl09-0.css">
+  <style>
+    /* Hide the About tab in settings */
+    button[data-value="about"],
+    button[value="about"],
+    [data-value="about"],
+    [role="tab"]:last-child,
+
+    button:has(+ [data-value="about"])~button[data-value="about"] {
+      display: none !important;
+    }
+
+    /* Hide by text content - targets the About tab */
+    button[role="tab"]:nth-child(6) {
+      display: none !important;
+    }
+  </style>
+  <script>
+    // Hide About tab after page loads
+    const hideAboutTab = () => {
+      document.querySelectorAll('button').forEach(btn => {
+        if (btn.textContent.trim() === 'About') {
+          btn.style.display = 'none';
+        }
+      });
+    };
+    // Run on load and observe for dynamic changes
+    window.addEventListener('load', () => {
+      hideAboutTab();
+      const observer = new MutationObserver(hideAboutTab);
+      observer.observe(document.body, { childList: true, subtree: true });
+    });
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+
+</html>

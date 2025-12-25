@@ -1,0 +1,71 @@
+{
+  "name": "my-desktop-vtuber",
+  "version": "1.2.1",
+  "description": "A low-latency voice-based LLM interaction tool with Live2D avatar integration",
+  "main": "electron/main.js",
+  "homepage": "./",
+  "author": "Nguyen Trung Kien",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --verbose",
+    "build": "electron-builder",
+    "build-win": "electron-builder --win",
+    "build-mac": "electron-builder --mac",
+    "build-linux": "electron-builder --linux"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.1.0"
+  },
+  "devDependencies": {
+    "electron": "^latest",
+    "electron-builder": "^latest"
+  },
+  "build": {
+    "appId": "com.mydesktopvtuber.app",
+    "productName": "My Desktop VTuber",
+    "directories": {
+      "buildResources": "assets"
+    },
+    "files": [
+      "electron/**/*",
+      "run_server.py",
+      "src/**/*",
+      "conf.yaml",
+      "pyproject.toml",
+      "model_dict.json",
+      "live2d-models/**/*",
+      "frontend/**/*",
+      "characters/**/*",
+      "prompts/**/*",
+      "config_templates/**/*",
+      "upgrade_codes/**/*",
+      "start_server.ps1",
+      ".venv/**/*"
+    ],
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    },
+    "mac": {
+      "target": [
+        "dmg",
+        "zip"
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    }
+  }
+}
