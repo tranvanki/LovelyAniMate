@@ -1,5 +1,5 @@
 {
-  "name": "my-desktop-vtuber",
+  "name": "lovely-animmate",
   "version": "1.2.1",
   "description": "A low-latency voice-based LLM interaction tool with Live2D avatar integration",
   "main": "electron/main.js",

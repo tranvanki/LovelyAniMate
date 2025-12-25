@@ -44,8 +44,8 @@ Access via browser at `http://localhost:12393` for:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/my-desktop-vtuber.git
-cd my-desktop-vtuber
+git clone https://github.com/yourusername/lovely-animmate.git
+cd lovely-animmate
 
 # Install dependencies using uv
 uv sync
@@ -133,7 +133,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Nguyen Trung Kien** (kienntgch230116@fpt.edu.vn)
 
 - Year Created: 2025
-- Repository: https://github.com/yourusername/my-desktop-vtuber
+- Repository: https://github.com/yourusername/lovely-animmate
 
 ## Contributing
 
